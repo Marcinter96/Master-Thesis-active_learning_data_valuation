@@ -1,0 +1,20 @@
+available_datasets:
+  - 'imdb'
+  - 'trec'
+
+max_vocab_size: 25000
+
+portion_used: 1.0
+
+train_split_ratio:
+    - 0.1
+    - 0.001
+    - 0.899
+
+test_split_ratio:
+  - 0.4
+  - 0.1
+  - 0.4
+
+vocab_vector: 'glove.6B.100d'
+batch_size: 64

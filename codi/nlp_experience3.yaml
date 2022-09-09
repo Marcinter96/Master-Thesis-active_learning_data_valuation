@@ -1,0 +1,12 @@
+batch_size: 64
+test_batch_size: 1
+epochs: 50
+optimizer: 'adam'
+path_to_ckpt: 'codi/checkpoint/weights.tf'
+loss: 'binary_crossentropy'
+patience: 5
+path_to_scaler: 'codi/scaler.pkl'
+features: ['norm_scores', 'grad_variance','grad_min_margin', 'grad_min']
+filtering: {'exp': False, 'thresh' : [0.25], 'nb_thresh' : 20, 'by_percentage' : False, 'in_between' : True}
+feature_dict: {'logits': [0, 2], 'logit_margin': [2],
+               'logit_ratio': [3], 'entropy':  [4], 'data': [5, 405]}

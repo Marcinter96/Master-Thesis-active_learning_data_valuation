@@ -1,0 +1,7 @@
+# IMDB reviews architecture
+
+embedding_layer:
+  embedding_dim: 100
+
+final_layer:
+  output_dim: 1

@@ -1,0 +1,10 @@
+layers: [{n_neurons: 32, activation: 'relu'},
+          {n_neurons: 64, activation: 'relu'},
+          {n_neurons: 128, activation: 'relu'},
+          {n_neurons: 256, activation: 'relu'},
+          {n_neurons: 1, activation: 'sigmoid'}]
+          
+use_bn: False
+use_dp: [True, False, True]
+regularization_factor: 0.001
+dp: 0.2

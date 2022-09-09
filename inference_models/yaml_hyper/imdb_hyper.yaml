@@ -1,0 +1,17 @@
+epochs: 10
+
+loss: 'binary_crossentropy'
+opt_gen_lr: 0.001
+criterion: 'BCEWithLogitsLoss'
+metrics:
+  - 'accuracy'
+
+binary: True
+
+early_stopping_patience: 3
+
+embedding_dim: 100
+
+model_saved: 'inference_models/fast_model.pt'
+
+inner_epochs: 5
